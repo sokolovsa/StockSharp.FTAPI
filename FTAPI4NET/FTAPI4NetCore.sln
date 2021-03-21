@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FTAPI4NetCore", "FTAPI4Net\FTAPI4NetCore.csproj", "{0D289C01-D711-4B08-A393-0FE70A581488}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleNetCore2.1", "Sample\SampleNetCore2.1.csproj", "{4D29BE4E-255C-47DC-8141-A353D78E285B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D289C01-D711-4B08-A393-0FE70A581488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D289C01-D711-4B08-A393-0FE70A581488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D289C01-D711-4B08-A393-0FE70A581488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D289C01-D711-4B08-A393-0FE70A581488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D29BE4E-255C-47DC-8141-A353D78E285B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D29BE4E-255C-47DC-8141-A353D78E285B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D29BE4E-255C-47DC-8141-A353D78E285B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D29BE4E-255C-47DC-8141-A353D78E285B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DEF6A58-0F2B-48C3-AECD-DD382AB23985}
+	EndGlobalSection
+EndGlobal
