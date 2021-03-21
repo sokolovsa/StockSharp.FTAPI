@@ -3,13 +3,18 @@
   <PropertyGroup>
     <PackageId>StockSharp.FTAPI</PackageId>
     <Version>1.0.0</Version>
+    <Authors>FUTU https://www.futunn.com/OpenAPI</Authors>
+    <PackageLicenseUrl>https://stocksharp.com/products/eula/</PackageLicenseUrl>
+    <PackageIconUrl>https://stocksharp.com/images/logo.png</PackageIconUrl>
     <Title>Futunn API built for .NET Standard 2.0</Title>
-    <Description>Futunn API built for .NET Standard 2.0, based on FTAPI-5.1.1320</Description>
+    <Description>Futunn API built for .NET Standard 2.0</Description>
+    <PackageReleaseNotes>This version is based on FTAPI-5.1.1320</PackageReleaseNotes>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Futu.OpenApi</RootNamespace>
     <AssemblyName>FTAPI4Net</AssemblyName>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RepositoryUrl>https://github.com/sokolovsa/StockSharp.FTAPI</RepositoryUrl>
 <!--    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>-->
   </PropertyGroup>
 
