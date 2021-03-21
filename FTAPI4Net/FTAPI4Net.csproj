@@ -1,142 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B52A46FE-170F-4CB5-AB42-F52C2DD50ED8}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FTAPI4Net</RootNamespace>
+    <PackageId>StockSharp.FTAPI</PackageId>
+    <Version>1.0.0</Version>
+    <Title>Futunn API built for .NET Standard 2.0</Title>
+    <Description>Futunn API built for .NET Standard 2.0, based on FTAPI-5.0.1312</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Futu.OpenApi</RootNamespace>
     <AssemblyName>FTAPI4Net</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+<!--    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>-->
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="Google.ProtocolBuffers, Version=2.4.1.555, Culture=neutral, PublicKeyToken=17b3b1f090c3ea48, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\net4.5\Google.ProtocolBuffers.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.ProtocolBuffers.Serialization, Version=2.4.1.555, Culture=neutral, PublicKeyToken=17b3b1f090c3ea48, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\net4.5\Google.ProtocolBuffers.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="Bosima.Google.ProtocolBuffers" Version="1.0.1" />
+    <PackageReference Include="Bosima.Google.ProtocolBuffers.Serialization" Version="1.0.1" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="FTAPI.cs" />
-    <Compile Include="FTAPI_Qot.cs" />
-    <Compile Include="FTAPI_Trd.cs" />
-    <Compile Include="FTCAPI.cs" />
-    <Compile Include="pb\Common.cs" />
-    <Compile Include="pb\GetDelayStatistics.cs" />
-    <Compile Include="pb\GetGlobalState.cs" />
-    <Compile Include="pb\GetUserInfo.cs" />
-    <Compile Include="pb\InitConnect.cs" />
-    <Compile Include="pb\KeepAlive.cs" />
-    <Compile Include="pb\Notify.cs" />
-    <Compile Include="pb\QotCommon.cs" />
-    <Compile Include="pb\QotGetBasicQot.cs" />
-    <Compile Include="pb\QotGetBroker.cs" />
-    <Compile Include="pb\QotGetCapitalDistribution.cs" />
-    <Compile Include="pb\QotGetCapitalFlow.cs" />
-    <Compile Include="pb\QotGetCodeChange.cs" />
-    <Compile Include="pb\QotGetFutureInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="pb\QotGetHistoryKL.cs" />
-    <Compile Include="pb\QotGetHistoryKLPoints.cs" />
-    <Compile Include="pb\QotGetHoldingChangeList.cs" />
-    <Compile Include="pb\QotGetIpoList.cs" />
-    <Compile Include="pb\QotGetKL.cs" />
-    <Compile Include="pb\QotGetMarketState.cs" />
-    <Compile Include="pb\QotGetOptionChain.cs" />
-    <Compile Include="pb\QotGetOrderBook.cs" />
-    <Compile Include="pb\QotGetOrderDetail.cs" />
-    <Compile Include="pb\QotGetOwnerPlate.cs" />
-    <Compile Include="pb\QotGetPlateSecurity.cs" />
-    <Compile Include="pb\QotGetPlateSet.cs" />
-    <Compile Include="pb\QotGetPriceReminder.cs" />
-    <Compile Include="pb\QotGetReference.cs" />
-    <Compile Include="pb\QotGetRehab.cs" />
-    <Compile Include="pb\QotGetRT.cs" />
-    <Compile Include="pb\QotGetSecuritySnapshot.cs" />
-    <Compile Include="pb\QotGetStaticInfo.cs" />
-    <Compile Include="pb\QotGetSubInfo.cs" />
-    <Compile Include="pb\QotGetSuspend.cs" />
-    <Compile Include="pb\QotGetTicker.cs" />
-    <Compile Include="pb\QotGetTradeDate.cs" />
-    <Compile Include="pb\QotGetUserSecurity.cs" />
-    <Compile Include="pb\QotGetUserSecurityGroup.cs" />
-    <Compile Include="pb\QotGetWarrant.cs" />
-    <Compile Include="pb\QotModifyUserSecurity.cs" />
-    <Compile Include="pb\QotRegQotPush.cs" />
-    <Compile Include="pb\QotRequestHistoryKL.cs" />
-    <Compile Include="pb\QotRequestHistoryKLQuota.cs" />
-    <Compile Include="pb\QotRequestRehab.cs" />
-    <Compile Include="pb\QotRequestTradeDate.cs" />
-    <Compile Include="pb\QotSetPriceReminder.cs" />
-    <Compile Include="pb\QotStockFilter.cs" />
-    <Compile Include="pb\QotSub.cs" />
-    <Compile Include="pb\QotUpdateBasicQot.cs" />
-    <Compile Include="pb\QotUpdateBroker.cs" />
-    <Compile Include="pb\QotUpdateKL.cs" />
-    <Compile Include="pb\QotUpdateOrderBook.cs" />
-    <Compile Include="pb\QotUpdateOrderDetail.cs" />
-    <Compile Include="pb\QotUpdatePriceReminder.cs" />
-    <Compile Include="pb\QotUpdateRT.cs" />
-    <Compile Include="pb\QotUpdateTicker.cs" />
-    <Compile Include="pb\TrdCommon.cs" />
-    <Compile Include="pb\TrdGetAccList.cs" />
-    <Compile Include="pb\TrdGetFunds.cs" />
-    <Compile Include="pb\TrdGetHistoryOrderFillList.cs" />
-    <Compile Include="pb\TrdGetHistoryOrderList.cs" />
-    <Compile Include="pb\TrdGetMaxTrdQtys.cs" />
-    <Compile Include="pb\TrdGetOrderFillList.cs" />
-    <Compile Include="pb\TrdGetOrderList.cs" />
-    <Compile Include="pb\TrdGetPositionList.cs" />
-    <Compile Include="pb\TrdModifyOrder.cs" />
-    <Compile Include="pb\TrdNotify.cs" />
-    <Compile Include="pb\TrdPlaceOrder.cs" />
-    <Compile Include="pb\TrdReconfirmOrder.cs" />
-    <Compile Include="pb\TrdSubAccPush.cs" />
-    <Compile Include="pb\TrdUnlockTrade.cs" />
-    <Compile Include="pb\TrdUpdateOrder.cs" />
-    <Compile Include="pb\TrdUpdateOrderFill.cs" />
-    <Compile Include="pb\Verification.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <NativeLibs Include="$(MSBuildThisFileDirectory)runtimes\**\*.dll*" />
+    <NativeLibs Include="$(MSBuildThisFileDirectory)runtimes\**\*.so" />
+    <NativeLibs Include="$(MSBuildThisFileDirectory)runtimes\**\*.a" />
+    <NativeLibs Include="$(MSBuildThisFileDirectory)runtimes\**\*.dylib" />
+    <Content Include="@(NativeLibs)">
+      <Pack>true</Pack>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <PackagePath>runtimes</PackagePath>
+    </Content>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

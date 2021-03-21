@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FTAPI4NetCore", "FTAPI4Net\FTAPI4NetCore.csproj", "{0D289C01-D711-4B08-A393-0FE70A581488}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FTAPI4Net", "FTAPI4Net\FTAPI4Net.csproj", "{0D289C01-D711-4B08-A393-0FE70A581488}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleNetCore2.1", "Sample\SampleNetCore2.1.csproj", "{4D29BE4E-255C-47DC-8141-A353D78E285B}"
 EndProject
