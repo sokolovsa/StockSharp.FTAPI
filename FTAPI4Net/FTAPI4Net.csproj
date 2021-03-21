@@ -4,7 +4,7 @@
     <PackageId>StockSharp.FTAPI</PackageId>
     <Version>1.0.0</Version>
     <Title>Futunn API built for .NET Standard 2.0</Title>
-    <Description>Futunn API built for .NET Standard 2.0, based on FTAPI-5.0.1312</Description>
+    <Description>Futunn API built for .NET Standard 2.0, based on FTAPI-5.1.1320</Description>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Futu.OpenApi</RootNamespace>
     <AssemblyName>FTAPI4Net</AssemblyName>
